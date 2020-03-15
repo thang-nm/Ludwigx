@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LXMainViewController" customModule="Ludwigx" customModuleProvider="target">
+            <connections>
+                <outlet property="loader" destination="AhZ-r1-cDJ" id="Com-Zr-efg"/>
+                <outlet property="messageLabeL" destination="OfB-DR-SuM" id="bho-PN-gUi"/>
+                <outlet property="resultTable" destination="OOv-Ro-piM" id="1Rm-t5-S56"/>
+                <outlet property="resultView" destination="ao6-rO-Uck" id="8m9-Yb-aRt"/>
+                <outlet property="searchTextField" destination="gpD-zD-Pkb" id="Mmm-su-v4Q"/>
+                <outlet property="searchView" destination="J0u-Rf-foJ" id="3oz-m0-3a7"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="J0u-Rf-foJ" userLabel="Search View">
+                    <rect key="frame" x="0.0" y="32" width="400" height="58"/>
+                    <subviews>
+                        <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpD-zD-Pkb" customClass="LXSearchField" customModule="Ludwigx" customModuleProvider="target">
+                            <rect key="frame" x="16" y="16" width="368" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="GLv-zK-7re"/>
+                            </constraints>
+                            <searchFieldCell key="cell" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Ludwig" usesSingleLineMode="YES" bezelStyle="round" id="TOz-41-28J">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                        </searchField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="gpD-zD-Pkb" secondAttribute="bottom" constant="16" id="BOq-yV-svR"/>
+                        <constraint firstItem="gpD-zD-Pkb" firstAttribute="top" secondItem="J0u-Rf-foJ" secondAttribute="top" constant="16" id="W0c-KR-UdO"/>
+                        <constraint firstItem="gpD-zD-Pkb" firstAttribute="trailing" secondItem="J0u-Rf-foJ" secondAttribute="trailing" constant="-16" id="hfV-yG-nSq"/>
+                        <constraint firstItem="gpD-zD-Pkb" firstAttribute="leading" secondItem="J0u-Rf-foJ" secondAttribute="leading" constant="16" id="mrD-7P-WGJ"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="ao6-rO-Uck" userLabel="Result View">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="32"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OfB-DR-SuM">
+                            <rect key="frame" x="14" y="16" width="372" height="16"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Something went wrong! Please try again." id="3Zp-B0-UDc">
+                                <font key="font" usesAppearanceFont="YES"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="AhZ-r1-cDJ">
+                            <rect key="frame" x="192" y="16" width="16" height="16"/>
+                        </progressIndicator>
+                        <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="d4h-IB-RYd" userLabel="Result Table">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="32"/>
+                            <clipView key="contentView" drawsBackground="NO" id="Idk-Uf-n7D">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="32"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" usesAutomaticRowHeights="YES" id="OOv-Ro-piM" customClass="LXMainTable" customModule="Ludwigx" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <tableViewGridLines key="gridStyleMask" horizontal="YES"/>
+                                        <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    </tableView>
+                                </subviews>
+                                <nil key="backgroundColor"/>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="0EQ-R5-wcQ">
+                                <rect key="frame" x="-100" y="-100" width="366" height="16"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="MOl-OS-2sd">
+                                <rect key="frame" x="-100" y="-100" width="15" height="102"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                        </scrollView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="OfB-DR-SuM" firstAttribute="top" secondItem="ao6-rO-Uck" secondAttribute="top" id="76n-wb-f4i"/>
+                        <constraint firstItem="d4h-IB-RYd" firstAttribute="leading" secondItem="ao6-rO-Uck" secondAttribute="leading" id="8di-kR-Zoa"/>
+                        <constraint firstItem="d4h-IB-RYd" firstAttribute="top" secondItem="ao6-rO-Uck" secondAttribute="top" id="B2s-se-R27"/>
+                        <constraint firstItem="OfB-DR-SuM" firstAttribute="leading" secondItem="ao6-rO-Uck" secondAttribute="leading" constant="16" id="Eys-Zq-mmO"/>
+                        <constraint firstItem="d4h-IB-RYd" firstAttribute="bottom" secondItem="ao6-rO-Uck" secondAttribute="bottom" id="nVB-Aa-mkX"/>
+                        <constraint firstItem="AhZ-r1-cDJ" firstAttribute="top" secondItem="ao6-rO-Uck" secondAttribute="top" id="qUd-2p-Nc7"/>
+                        <constraint firstItem="d4h-IB-RYd" firstAttribute="trailing" secondItem="ao6-rO-Uck" secondAttribute="trailing" id="riJ-WF-j1i"/>
+                        <constraint firstItem="AhZ-r1-cDJ" firstAttribute="centerX" secondItem="ao6-rO-Uck" secondAttribute="centerX" id="u2h-PV-S83"/>
+                        <constraint firstItem="OfB-DR-SuM" firstAttribute="trailing" secondItem="ao6-rO-Uck" secondAttribute="trailing" constant="-16" id="uSO-Vf-yym"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ao6-rO-Uck" firstAttribute="leading" secondItem="J0u-Rf-foJ" secondAttribute="leading" id="45g-e0-EVv"/>
+                <constraint firstItem="J0u-Rf-foJ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="LON-UH-hKT"/>
+                <constraint firstItem="ao6-rO-Uck" firstAttribute="top" secondItem="J0u-Rf-foJ" secondAttribute="bottom" id="MDV-JW-5tl"/>
+                <constraint firstItem="ao6-rO-Uck" firstAttribute="trailing" secondItem="J0u-Rf-foJ" secondAttribute="trailing" id="WhO-Os-vIr"/>
+                <constraint firstItem="J0u-Rf-foJ" firstAttribute="trailing" secondItem="Hz6-mo-xeY" secondAttribute="trailing" id="aWN-ht-Txf"/>
+                <constraint firstItem="J0u-Rf-foJ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="ban-BJ-gXW"/>
+                <constraint firstItem="ao6-rO-Uck" firstAttribute="bottom" secondItem="Hz6-mo-xeY" secondAttribute="bottom" id="nAC-Vf-Kgd"/>
+            </constraints>
+            <point key="canvasLocation" x="66" y="129.5"/>
+        </customView>
+    </objects>
+</document>

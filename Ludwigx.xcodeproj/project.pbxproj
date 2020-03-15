@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8422845D241FD11C004C6A4A /* LudwigxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8422845C241FD11C004C6A4A /* LudwigxAPI.framework */; };
+		8422845E241FD11C004C6A4A /* LudwigxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8422845C241FD11C004C6A4A /* LudwigxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8439B59B242EFDCE001ADE77 /* LXSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439B59A242EFDCE001ADE77 /* LXSearchField.swift */; };
+		8439B5A1242F92B6001ADE77 /* LXResultSourceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439B5A0242F92B6001ADE77 /* LXResultSourceLabel.swift */; };
+		846D7C00241DC21300CB6563 /* LXAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D7BFF241DC21300CB6563 /* LXAppDelegate.swift */; };
+		846D7C04241DC21500CB6563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846D7C03241DC21500CB6563 /* Assets.xcassets */; };
+		846D7C11241DC2B700CB6563 /* LXMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D7C0F241DC2B700CB6563 /* LXMainViewController.swift */; };
+		846D7C12241DC2B700CB6563 /* LXMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846D7C10241DC2B700CB6563 /* LXMainViewController.xib */; };
+		846D7C14241DC3EB00CB6563 /* LXApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D7C13241DC3EB00CB6563 /* LXApplication.swift */; };
+		846D7C1C241DE37200CB6563 /* LXPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D7C1B241DE37200CB6563 /* LXPopover.swift */; };
+		846D7C20241E0AC700CB6563 /* LXResultTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D7C1F241E0AC700CB6563 /* LXResultTable.swift */; };
+		846D7C22241E0B1500CB6563 /* LXResultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D7C21241E0B1500CB6563 /* LXResultTableCell.swift */; };
+		84C2E554242B27FD00BCE427 /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2E553242B27FD00BCE427 /* NSColor+Extension.swift */; };
+		84C2E558242B57D500BCE427 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2E557242B57D500BCE427 /* String+Extension.swift */; };
+		84E5CCBA241E0DDF00ECAD5B /* NSTable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5CCB9241E0DDF00ECAD5B /* NSTable+Extension.swift */; };
+		84E5CCBC241E100800ECAD5B /* LXResultTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E5CCBB241E100800ECAD5B /* LXResultTableCell.xib */; };
+		84EC653F2430197800982485 /* LXMainScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC653E2430197800982485 /* LXMainScreenData.swift */; };
+		84FDF05024210B2F006073F7 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDF04F24210B2F006073F7 /* Collection+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8422845F241FD11C004C6A4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8422845E241FD11C004C6A4A /* LudwigxAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8422845C241FD11C004C6A4A /* LudwigxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LudwigxAPI.framework; sourceTree = "<group>"; };
+		8439B59A242EFDCE001ADE77 /* LXSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXSearchField.swift; sourceTree = "<group>"; };
+		8439B5A0242F92B6001ADE77 /* LXResultSourceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXResultSourceLabel.swift; sourceTree = "<group>"; };
+		846D7BFC241DC21300CB6563 /* Ludwigx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ludwigx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		846D7BFF241DC21300CB6563 /* LXAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXAppDelegate.swift; sourceTree = "<group>"; };
+		846D7C03241DC21500CB6563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		846D7C08241DC21500CB6563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846D7C09241DC21500CB6563 /* Ludwigx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ludwigx.entitlements; sourceTree = "<group>"; };
+		846D7C0F241DC2B700CB6563 /* LXMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXMainViewController.swift; sourceTree = "<group>"; };
+		846D7C10241DC2B700CB6563 /* LXMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXMainViewController.xib; sourceTree = "<group>"; };
+		846D7C13241DC3EB00CB6563 /* LXApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXApplication.swift; sourceTree = "<group>"; };
+		846D7C1B241DE37200CB6563 /* LXPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXPopover.swift; sourceTree = "<group>"; };
+		846D7C1F241E0AC700CB6563 /* LXResultTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXResultTable.swift; sourceTree = "<group>"; };
+		846D7C21241E0B1500CB6563 /* LXResultTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXResultTableCell.swift; sourceTree = "<group>"; };
+		84C2E553242B27FD00BCE427 /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
+		84C2E557242B57D500BCE427 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		84E5CCB9241E0DDF00ECAD5B /* NSTable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTable+Extension.swift"; sourceTree = "<group>"; };
+		84E5CCBB241E100800ECAD5B /* LXResultTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXResultTableCell.xib; sourceTree = "<group>"; };
+		84EC653E2430197800982485 /* LXMainScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXMainScreenData.swift; sourceTree = "<group>"; };
+		84FDF04F24210B2F006073F7 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		846D7BF9241DC21300CB6563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8422845D241FD11C004C6A4A /* LudwigxAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8422845B241FD11C004C6A4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8422845C241FD11C004C6A4A /* LudwigxAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8439B59C242F9240001ADE77 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8439B5A0242F92B6001ADE77 /* LXResultSourceLabel.swift */,
+				846D7C21241E0B1500CB6563 /* LXResultTableCell.swift */,
+				84E5CCBB241E100800ECAD5B /* LXResultTableCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		8439B59D242F924C001ADE77 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				846D7C1F241E0AC700CB6563 /* LXResultTable.swift */,
+				8439B59A242EFDCE001ADE77 /* LXSearchField.swift */,
+				84EC653E2430197800982485 /* LXMainScreenData.swift */,
+				846D7C0F241DC2B700CB6563 /* LXMainViewController.swift */,
+				846D7C10241DC2B700CB6563 /* LXMainViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		846D7BF3241DC21200CB6563 = {
+			isa = PBXGroup;
+			children = (
+				846D7BFE241DC21300CB6563 /* Ludwigx */,
+				846D7BFD241DC21300CB6563 /* Products */,
+				8422845B241FD11C004C6A4A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		846D7BFD241DC21300CB6563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846D7BFC241DC21300CB6563 /* Ludwigx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		846D7BFE241DC21300CB6563 /* Ludwigx */ = {
+			isa = PBXGroup;
+			children = (
+				846D7C18241DE2C600CB6563 /* Configuration */,
+				84E5CCB8241E0DC900ECAD5B /* Extension */,
+				846D7C15241DE29E00CB6563 /* Screens */,
+				846D7C16241DE2AB00CB6563 /* Resources */,
+				846D7BFF241DC21300CB6563 /* LXAppDelegate.swift */,
+				846D7C13241DC3EB00CB6563 /* LXApplication.swift */,
+			);
+			path = Ludwigx;
+			sourceTree = "<group>";
+		};
+		846D7C15241DE29E00CB6563 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				846D7C1A241DE35800CB6563 /* Popover */,
+				846D7C17241DE2B600CB6563 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		846D7C16241DE2AB00CB6563 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				846D7C03241DC21500CB6563 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		846D7C17241DE2B600CB6563 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8439B59C242F9240001ADE77 /* Cell */,
+				8439B59D242F924C001ADE77 /* ViewController */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		846D7C18241DE2C600CB6563 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				846D7C08241DC21500CB6563 /* Info.plist */,
+				846D7C09241DC21500CB6563 /* Ludwigx.entitlements */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		846D7C1A241DE35800CB6563 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				846D7C1B241DE37200CB6563 /* LXPopover.swift */,
+			);
+			name = Popover;
+			sourceTree = "<group>";
+		};
+		84E5CCB8241E0DC900ECAD5B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84C2E557242B57D500BCE427 /* String+Extension.swift */,
+				84E5CCB9241E0DDF00ECAD5B /* NSTable+Extension.swift */,
+				84C2E553242B27FD00BCE427 /* NSColor+Extension.swift */,
+				84FDF04F24210B2F006073F7 /* Collection+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		846D7BFB241DC21300CB6563 /* Ludwigx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846D7C0C241DC21500CB6563 /* Build configuration list for PBXNativeTarget "Ludwigx" */;
+			buildPhases = (
+				846D7BF8241DC21300CB6563 /* Sources */,
+				846D7BF9241DC21300CB6563 /* Frameworks */,
+				846D7BFA241DC21300CB6563 /* Resources */,
+				8422845F241FD11C004C6A4A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ludwigx;
+			productName = Ludwigx;
+			productReference = 846D7BFC241DC21300CB6563 /* Ludwigx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		846D7BF4241DC21200CB6563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "thang-nm";
+				TargetAttributes = {
+					846D7BFB241DC21300CB6563 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 846D7BF7241DC21200CB6563 /* Build configuration list for PBXProject "Ludwigx" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 846D7BF3241DC21200CB6563;
+			productRefGroup = 846D7BFD241DC21300CB6563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				846D7BFB241DC21300CB6563 /* Ludwigx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		846D7BFA241DC21300CB6563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846D7C04241DC21500CB6563 /* Assets.xcassets in Resources */,
+				846D7C12241DC2B700CB6563 /* LXMainViewController.xib in Resources */,
+				84E5CCBC241E100800ECAD5B /* LXResultTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		846D7BF8241DC21300CB6563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EC653F2430197800982485 /* LXMainScreenData.swift in Sources */,
+				846D7C14241DC3EB00CB6563 /* LXApplication.swift in Sources */,
+				846D7C1C241DE37200CB6563 /* LXPopover.swift in Sources */,
+				8439B59B242EFDCE001ADE77 /* LXSearchField.swift in Sources */,
+				84C2E554242B27FD00BCE427 /* NSColor+Extension.swift in Sources */,
+				846D7C11241DC2B700CB6563 /* LXMainViewController.swift in Sources */,
+				8439B5A1242F92B6001ADE77 /* LXResultSourceLabel.swift in Sources */,
+				84E5CCBA241E0DDF00ECAD5B /* NSTable+Extension.swift in Sources */,
+				846D7C22241E0B1500CB6563 /* LXResultTableCell.swift in Sources */,
+				846D7C20241E0AC700CB6563 /* LXResultTable.swift in Sources */,
+				84FDF05024210B2F006073F7 /* Collection+Extension.swift in Sources */,
+				84C2E558242B57D500BCE427 /* String+Extension.swift in Sources */,
+				846D7C00241DC21300CB6563 /* LXAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		846D7C0A241DC21500CB6563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		846D7C0B241DC21500CB6563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		846D7C0D241DC21500CB6563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ludwigx/Configuration/Ludwigx.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = Ludwigx/Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thangnm.ludwigx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		846D7C0E241DC21500CB6563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ludwigx/Configuration/Ludwigx.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = Ludwigx/Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thangnm.ludwigx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		846D7BF7241DC21200CB6563 /* Build configuration list for PBXProject "Ludwigx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846D7C0A241DC21500CB6563 /* Debug */,
+				846D7C0B241DC21500CB6563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846D7C0C241DC21500CB6563 /* Build configuration list for PBXNativeTarget "Ludwigx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846D7C0D241DC21500CB6563 /* Debug */,
+				846D7C0E241DC21500CB6563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 846D7BF4241DC21200CB6563 /* Project object */;
+}

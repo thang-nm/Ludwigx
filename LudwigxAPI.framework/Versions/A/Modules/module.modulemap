@@ -1,0 +1,4 @@
+framework module LudwigxAPI {
+  header "LudwigxAPI-Swift.h"
+  requires objc
+}
