@@ -140,12 +140,13 @@ extension LXMainViewController {
   }
 
   private func createResetTimer() {
-    let timer = Timer(fireAt: .init(timeIntervalSinceNow: 120),
-                      interval: 0,
-                      target: self,
-                      selector: #selector(resetView),
-                      userInfo: nil,
-                      repeats: false)
+    let timer = Timer(
+      fireAt: .init(timeIntervalSinceNow: 120),
+      interval: 0,
+      target: self,
+      selector: #selector(resetView),
+      userInfo: nil,
+      repeats: false)
     self.resetTimer = timer
     RunLoop.current.add(timer, forMode: .default)
   }
