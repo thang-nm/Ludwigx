@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EBEF1A415F9C2930F82788E /* Pods_Ludwigx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA82961C682C7AE1B7E2598E /* Pods_Ludwigx.framework */; };
 		8422845D241FD11C004C6A4A /* LudwigxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8422845C241FD11C004C6A4A /* LudwigxAPI.framework */; };
 		8422845E241FD11C004C6A4A /* LudwigxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8422845C241FD11C004C6A4A /* LudwigxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8439B59B242EFDCE001ADE77 /* LXSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439B59A242EFDCE001ADE77 /* LXSearchField.swift */; };
@@ -58,10 +59,15 @@
 		846D7C21241E0B1500CB6563 /* LXResultTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXResultTableCell.swift; sourceTree = "<group>"; };
 		84C2E553242B27FD00BCE427 /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
 		84C2E557242B57D500BCE427 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		84C51C1E2497471500EE2BEF /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		84C51C1F2497479E00EE2BEF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		84E5CCB9241E0DDF00ECAD5B /* NSTable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTable+Extension.swift"; sourceTree = "<group>"; };
 		84E5CCBB241E100800ECAD5B /* LXResultTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXResultTableCell.xib; sourceTree = "<group>"; };
 		84EC653E2430197800982485 /* LXMainScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXMainScreenData.swift; sourceTree = "<group>"; };
 		84FDF04F24210B2F006073F7 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		B9897635CDB855A6E41D86F3 /* Pods-Ludwigx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ludwigx.release.xcconfig"; path = "Target Support Files/Pods-Ludwigx/Pods-Ludwigx.release.xcconfig"; sourceTree = "<group>"; };
+		D52359EA4FDD1C60BFC549FB /* Pods-Ludwigx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ludwigx.debug.xcconfig"; path = "Target Support Files/Pods-Ludwigx/Pods-Ludwigx.debug.xcconfig"; sourceTree = "<group>"; };
+		DA82961C682C7AE1B7E2598E /* Pods_Ludwigx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ludwigx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8422845D241FD11C004C6A4A /* LudwigxAPI.framework in Frameworks */,
+				2EBEF1A415F9C2930F82788E /* Pods_Ludwigx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8422845C241FD11C004C6A4A /* LudwigxAPI.framework */,
+				DA82961C682C7AE1B7E2598E /* Pods_Ludwigx.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 				846D7BFE241DC21300CB6563 /* Ludwigx */,
 				846D7BFD241DC21300CB6563 /* Products */,
 				8422845B241FD11C004C6A4A /* Frameworks */,
+				998108F644C2345549934E92 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +176,8 @@
 			children = (
 				846D7C08241DC21500CB6563 /* Info.plist */,
 				846D7C09241DC21500CB6563 /* Ludwigx.entitlements */,
+				84C51C1E2497471500EE2BEF /* Debug.xcconfig */,
+				84C51C1F2497479E00EE2BEF /* Release.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -190,6 +201,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		998108F644C2345549934E92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D52359EA4FDD1C60BFC549FB /* Pods-Ludwigx.debug.xcconfig */,
+				B9897635CDB855A6E41D86F3 /* Pods-Ludwigx.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,10 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 846D7C0C241DC21500CB6563 /* Build configuration list for PBXNativeTarget "Ludwigx" */;
 			buildPhases = (
+				0A319FE46229D0ABF8402A6B /* [CP] Check Pods Manifest.lock */,
 				846D7BF8241DC21300CB6563 /* Sources */,
 				846D7BF9241DC21300CB6563 /* Frameworks */,
 				846D7BFA241DC21300CB6563 /* Resources */,
 				8422845F241FD11C004C6A4A /* Embed Frameworks */,
+				5F4AF906C22A8A3AB608DCEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +278,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A319FE46229D0ABF8402A6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ludwigx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F4AF906C22A8A3AB608DCEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ludwigx/Pods-Ludwigx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ludwigx/Pods-Ludwigx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ludwigx/Pods-Ludwigx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		846D7BF8241DC21300CB6563 /* Sources */ = {
@@ -398,6 +462,7 @@
 		};
 		846D7C0D241DC21500CB6563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C51C1E2497471500EE2BEF /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Ludwigx/Configuration/Ludwigx.entitlements;
@@ -406,7 +471,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = Ludwigx/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,6 +486,7 @@
 		};
 		846D7C0E241DC21500CB6563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C51C1F2497479E00EE2BEF /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Ludwigx/Configuration/Ludwigx.entitlements;
@@ -430,7 +495,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = Ludwigx/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

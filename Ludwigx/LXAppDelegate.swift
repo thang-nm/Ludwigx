@@ -7,15 +7,19 @@
 //
 
 import Cocoa
+import HotKey
 
 @NSApplicationMain
 class LXAppDelegate: NSObject, NSApplicationDelegate {
+
+  private var openHotkey: HotKey?
 
   lazy var statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
   lazy var popover: LXPopoverable = LXPopover(viewController: LXMainViewController())
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     configure(statusItem: statusItem)
+    setupHotkey()
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {
@@ -29,6 +33,13 @@ extension LXAppDelegate {
       button.image = #imageLiteral(resourceName: "keyboard-menubar")
       button.action = #selector(onStatusItemClick(_:))
       button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+    }
+  }
+
+  private func setupHotkey() {
+    openHotkey = HotKey(key: .l, modifiers: [.command, .shift])
+    openHotkey?.keyDownHandler = { [weak self] in
+      self?.popover.show(opener: self?.statusItem.button)
     }
   }
 
