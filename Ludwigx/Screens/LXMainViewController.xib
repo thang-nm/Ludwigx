@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="loader" destination="AhZ-r1-cDJ" id="Com-Zr-efg"/>
                 <outlet property="messageLabeL" destination="OfB-DR-SuM" id="bho-PN-gUi"/>
+                <outlet property="pinnedButton" destination="hzi-bQ-rwN" id="EIA-Bb-kkc"/>
                 <outlet property="resultTable" destination="OOv-Ro-piM" id="1Rm-t5-S56"/>
                 <outlet property="resultView" destination="ao6-rO-Uck" id="8m9-Yb-aRt"/>
                 <outlet property="searchTextField" destination="gpD-zD-Pkb" id="Mmm-su-v4Q"/>

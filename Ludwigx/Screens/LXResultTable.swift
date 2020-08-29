@@ -42,6 +42,7 @@ class LXMainTable: NSTableView {
       origin: .zero,
       size: CGSize(width: frame.width, height: 1)
     ))
+    headerView?.layer?.backgroundColor = NSColor.systemGray.cgColor
   }
 
   private func addColumn() {

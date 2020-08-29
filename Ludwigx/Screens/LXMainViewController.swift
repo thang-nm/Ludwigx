@@ -15,6 +15,7 @@ protocol LXPopoverViewController: class {
 
 class LXMainViewController: NSViewController, LXPopoverViewController {
 
+  @IBOutlet weak var pinnedButton: NSButton!
   @IBOutlet weak var searchView: NSView!
   @IBOutlet weak var searchTextField: LXSearchField!
   @IBOutlet weak var loader: NSProgressIndicator!
@@ -68,9 +69,12 @@ extension LXMainViewController {
 
   @IBAction func pin(_ sender: NSButton) {
     if popover?.behavior == .some(.transient) {
+      UserDefaults.standard.write(key: .pinned, value: true)
       popover?.behavior = .applicationDefined
       sender.image = #imageLiteral(resourceName: "chevron-down")
+
     } else {
+      UserDefaults.standard.write(key: .pinned, value: false)
       popover?.behavior = .transient
       sender.image = #imageLiteral(resourceName: "chevron-up")
     }
@@ -85,6 +89,9 @@ extension LXMainViewController {
         NSAppearance.current = object.effectiveAppearance
       }
     }
+    pinnedButton.image = (UserDefaults.standard.read(key: .pinned) ?? false)
+      ? #imageLiteral(resourceName: "chevron-down")
+      : #imageLiteral(resourceName: "chevron-up")
   }
 
   private func configure(searchField: LXSearchField) {

@@ -19,7 +19,9 @@ class LXPopover: NSPopover {
   init(viewController: NSViewController & LXPopoverViewController) {
     super.init()
     contentViewController = viewController
-    behavior = .transient
+    behavior = (UserDefaults.standard.read(key: .pinned) ?? false)
+      ? .applicationDefined
+      : .transient
     viewController.popover = self
   }
 

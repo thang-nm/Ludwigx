@@ -22,6 +22,7 @@
 		846D7C22241E0B1500CB6563 /* LXResultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D7C21241E0B1500CB6563 /* LXResultTableCell.swift */; };
 		84C2E554242B27FD00BCE427 /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2E553242B27FD00BCE427 /* NSColor+Extension.swift */; };
 		84C2E558242B57D500BCE427 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C2E557242B57D500BCE427 /* String+Extension.swift */; };
+		84D53F9424FAA50F000E1A6E /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D53F9324FAA50F000E1A6E /* UserDefaults+Extension.swift */; };
 		84E5CCBA241E0DDF00ECAD5B /* NSTable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5CCB9241E0DDF00ECAD5B /* NSTable+Extension.swift */; };
 		84E5CCBC241E100800ECAD5B /* LXResultTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E5CCBB241E100800ECAD5B /* LXResultTableCell.xib */; };
 		84EC653F2430197800982485 /* LXMainScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC653E2430197800982485 /* LXMainScreenData.swift */; };
@@ -61,6 +62,7 @@
 		84C2E557242B57D500BCE427 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		84C51C1E2497471500EE2BEF /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		84C51C1F2497479E00EE2BEF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		84D53F9324FAA50F000E1A6E /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		84E5CCB9241E0DDF00ECAD5B /* NSTable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTable+Extension.swift"; sourceTree = "<group>"; };
 		84E5CCBB241E100800ECAD5B /* LXResultTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXResultTableCell.xib; sourceTree = "<group>"; };
 		84EC653E2430197800982485 /* LXMainScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXMainScreenData.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				84E5CCB9241E0DDF00ECAD5B /* NSTable+Extension.swift */,
 				84C2E553242B27FD00BCE427 /* NSColor+Extension.swift */,
 				84FDF04F24210B2F006073F7 /* Collection+Extension.swift */,
+				84D53F9324FAA50F000E1A6E /* UserDefaults+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				846D7C20241E0AC700CB6563 /* LXResultTable.swift in Sources */,
 				84FDF05024210B2F006073F7 /* Collection+Extension.swift in Sources */,
 				84C2E558242B57D500BCE427 /* String+Extension.swift in Sources */,
+				84D53F9424FAA50F000E1A6E /* UserDefaults+Extension.swift in Sources */,
 				846D7C00241DC21300CB6563 /* LXAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,14 +473,14 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ludwigx/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thangnm.ludwigx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -493,14 +497,14 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ludwigx/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thangnm.ludwigx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
