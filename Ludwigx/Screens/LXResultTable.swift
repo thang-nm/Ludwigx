@@ -14,6 +14,14 @@ class LXMainTable: NSTableView {
     super.init(frame: .zero)
   }
 
+  override var isHidden: Bool {
+    didSet {
+      isHidden
+        ? (headerView = nil)
+        : addHeader()
+    }
+  }
+
   override init(frame frameRect: NSRect) {
     super.init(frame: frameRect)
     configure()
@@ -25,6 +33,18 @@ class LXMainTable: NSTableView {
   }
 
   func configure() {
+    addHeader()
+    addColumn()
+  }
+
+  private func addHeader() {
+    headerView = NSTableHeaderView(frame: CGRect(
+      origin: .zero,
+      size: CGSize(width: frame.width, height: 1)
+    ))
+  }
+
+  private func addColumn() {
     let column = NSTableColumn()
     column.width = frame.width
     column.maxWidth = column.width

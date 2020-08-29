@@ -25,8 +25,9 @@ class LXMainViewController: NSViewController, LXPopoverViewController {
   var popover: NSPopover?
   private var data: [LXMainScreenData]?
   private var observation: NSKeyValueObservation?
-  private var maxHeight: CGFloat = 380
-  private var minHeight: CGFloat = 90
+  private var defaultHeight: CGFloat = 74
+  private var maxHeight: CGFloat = 420
+  private var minHeight: CGFloat = 104
   private var resetTimer: Timer?
 
   override func viewDidLoad() {
@@ -56,6 +57,23 @@ class LXMainViewController: NSViewController, LXPopoverViewController {
   deinit {
     observation?.invalidate()
     resetTimer?.invalidate()
+  }
+}
+
+extension LXMainViewController {
+
+  @IBAction func close(_ sender: NSButton) {
+    popover?.close()
+  }
+
+  @IBAction func pin(_ sender: NSButton) {
+    if popover?.behavior == .some(.transient) {
+      popover?.behavior = .applicationDefined
+      sender.image = #imageLiteral(resourceName: "chevron-down")
+    } else {
+      popover?.behavior = .transient
+      sender.image = #imageLiteral(resourceName: "chevron-up")
+    }
   }
 }
 
@@ -111,7 +129,9 @@ extension LXMainViewController {
         ? maxHeight
         : resultTable.intrinsicContentSize.height)
 
-    resultTable.scrollTo(row: 0, animated: true)
+    DispatchQueue.main.async {
+      self.resultTable.scrollTo(row: 0, animated: true)
+    }
   }
 
   private func alert(message: String) {
@@ -125,6 +145,7 @@ extension LXMainViewController {
   private func loading() {
     loader.isHidden = false
     loader.startAnimation(nil)
+    resultTable.isHidden = true
     messageLabeL.isHidden = true
     resultTable.isHidden = true
     updateFrame(height: minHeight)
@@ -141,7 +162,7 @@ extension LXMainViewController {
 
   private func createResetTimer() {
     let timer = Timer(
-      fireAt: .init(timeIntervalSinceNow: 120),
+      fireAt: .init(timeIntervalSinceNow: 300),
       interval: 0,
       target: self,
       selector: #selector(resetView),
@@ -158,7 +179,8 @@ extension LXMainViewController {
     resultTable.reloadData()
     messageLabeL.isHidden = true
     loader.isHidden = true
-    updateFrame(height: 58)
+    resultTable.isHidden = true
+    updateFrame(height: defaultHeight)
     resetTimer?.invalidate()
     resetTimer = nil
   }
