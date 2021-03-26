@@ -27,7 +27,7 @@ class LXMainViewController: NSViewController, LXPopoverViewController {
   private var data: [LXMainScreenData]?
   private var observation: NSKeyValueObservation?
   private var defaultHeight: CGFloat = 74
-  private var maxHeight: CGFloat = 420
+  private var maxHeight: CGFloat = 460
   private var minHeight: CGFloat = 104
   private var resetTimer: Timer?
 
@@ -102,6 +102,9 @@ extension LXMainViewController {
     tableView.register(class: LXResultTableCell.self)
     tableView.dataSource = self
     tableView.delegate = self
+    if #available(OSX 11.0, *) {
+      tableView.style = .fullWidth
+    }
   }
 
   private func search(text: String) {
@@ -130,11 +133,7 @@ extension LXMainViewController {
     messageLabeL.isHidden = true
     resultTable.isHidden = false
     resultTable.reloadData()
-
-    updateFrame(height: searchView.frame.height
-      + resultTable.intrinsicContentSize.height > maxHeight
-        ? maxHeight
-        : resultTable.intrinsicContentSize.height)
+    updateFrame(height: maxHeight)
 
     DispatchQueue.main.async {
       self.resultTable.scrollTo(row: 0, animated: true)

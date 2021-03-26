@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		D6uJ0RuljyallK9nPudsHM40PTo=
+		/0bNJxE6Q6U7Iwv2XFEPZRiKSV4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -15,77 +15,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v77ZRo6OzVg64uX55FvdpyuAsnY=
+			9KG9WBnOKLcQyP1WTU+IhLNLAB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GWHrBqvKIe7RiFIkSwnu3eYEbeEdD5xGcenH3Y5uF5g=
+			674gW7wZF+ImhHQggYtcQMPN1s6CaJ6uuP8wZe8vq8o=
 			</data>
 		</dict>
-		<key>Modules/LudwigxAPI.swiftmodule/Project/x86_64-apple-macos.swiftsourceinfo</key>
+		<key>Modules/LudwigxAPI.swiftmodule/arm64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q66oSYIyVTWbQ6vdxsZJ1Nn3k1Q=
+			T1NplPS9N8sITCQpVWXTgSwIJ0c=
 			</data>
 			<key>hash2</key>
 			<data>
-			/nDIS35ZxYTjm64MgVNi+BExKgw9lYUYmUExKEyNa54=
+			4P4dtv0bZMoXJXMl1OIeDaghNw4/HPnYZR0Xyd0o4rI=
 			</data>
 		</dict>
-		<key>Modules/LudwigxAPI.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<key>Modules/LudwigxAPI.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q66oSYIyVTWbQ6vdxsZJ1Nn3k1Q=
+			NxgTF30K/BBA8Fokh/emQiazcqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			/nDIS35ZxYTjm64MgVNi+BExKgw9lYUYmUExKEyNa54=
+			873+Bqm4hm0aKLeIRUMC2MQsK2NtC4rE+gxZleMN3x0=
+			</data>
+		</dict>
+		<key>Modules/LudwigxAPI.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T1NplPS9N8sITCQpVWXTgSwIJ0c=
+			</data>
+			<key>hash2</key>
+			<data>
+			4P4dtv0bZMoXJXMl1OIeDaghNw4/HPnYZR0Xyd0o4rI=
+			</data>
+		</dict>
+		<key>Modules/LudwigxAPI.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NxgTF30K/BBA8Fokh/emQiazcqk=
+			</data>
+			<key>hash2</key>
+			<data>
+			873+Bqm4hm0aKLeIRUMC2MQsK2NtC4rE+gxZleMN3x0=
 			</data>
 		</dict>
 		<key>Modules/LudwigxAPI.swiftmodule/x86_64-apple-macos.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			td0FVs0NzHIj1yC//awm9ZhCs5k=
+			2RAAEGHYpKgRvzwmJTb5eZ9YX2A=
 			</data>
 			<key>hash2</key>
 			<data>
-			saAK1lEZQRsYD7PliyyFBzCdCZAWXAFI99J4HLyIqVo=
+			H1ruJ13XmMCjMYgJ4aw7e26Qt8Rz17gY+p/PznVFFYk=
 			</data>
 		</dict>
 		<key>Modules/LudwigxAPI.swiftmodule/x86_64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DnJv61jhZac8z5U7IX/Tcs8+QZA=
+			12GA0efm1n//3Vf7Yc+AUQH6W/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			ew4jQfEq6NpglEJJTymajOfaE8dz1ppiHNjfXaRDPpE=
+			M5cgUAwKxn5CJxgD+5VP1mnuEQkccGunZDbBnUAfT0o=
 			</data>
 		</dict>
 		<key>Modules/LudwigxAPI.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			td0FVs0NzHIj1yC//awm9ZhCs5k=
+			2RAAEGHYpKgRvzwmJTb5eZ9YX2A=
 			</data>
 			<key>hash2</key>
 			<data>
-			saAK1lEZQRsYD7PliyyFBzCdCZAWXAFI99J4HLyIqVo=
+			H1ruJ13XmMCjMYgJ4aw7e26Qt8Rz17gY+p/PznVFFYk=
 			</data>
 		</dict>
 		<key>Modules/LudwigxAPI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DnJv61jhZac8z5U7IX/Tcs8+QZA=
+			12GA0efm1n//3Vf7Yc+AUQH6W/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			ew4jQfEq6NpglEJJTymajOfaE8dz1ppiHNjfXaRDPpE=
+			M5cgUAwKxn5CJxgD+5VP1mnuEQkccGunZDbBnUAfT0o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -103,11 +125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D6uJ0RuljyallK9nPudsHM40PTo=
+			/0bNJxE6Q6U7Iwv2XFEPZRiKSV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tGeS60/5ZAnblk+ivCqejmqXVszJo4K6SSgG2VxnvEg=
+			wK9zaFLG1MPPatbnL4vaBIGk0/Rl1gm4X3kZ0W/XSEY=
 			</data>
 		</dict>
 	</dict>
